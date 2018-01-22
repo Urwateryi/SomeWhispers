@@ -1,0 +1,5 @@
+<!--pages/create/create.wxml-->
+<!-- 这个页面尝试事件 -->
+<view class="container">
+  <view bindtap="add"> {{count}} </view>
+</view>

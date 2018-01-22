@@ -1,0 +1,8 @@
+<!--pages/msg/msg.wxml-->
+<!-- 这个页面尝试条件渲染 -->
+<view class="container">
+  <view wx:if="{{view == 'index'}}">THIS IS PAGE ONE</view>
+  <view wx:elif="{{view == 'msg'}}">THIS IS PAGE TWO</view>
+  <view wx:elif="{{view == 'search'}}"> THIS IS PAGE THREE</view>
+  <view wx:else="{{view == 'mine'}}"> THIS IS PAGE FOUR</view>
+</view>

@@ -1,0 +1,14 @@
+<!--pages/search/search.wxml-->
+<!-- 这个页面尝试模板 -->
+<template name="staffInfo">
+  <view>
+    FirstName: {{firstName}},
+    LastName: {{lastName}},
+    Sex:{{sex}},
+    Age:{{age}}
+  </view>
+</template>
+
+<template is="staffInfo" data="{{...staffA}}"></template>
+<template is="staffInfo" data="{{...staffB}}"></template>
+<template is="staffInfo" data="{{...staffC}}"></template>
