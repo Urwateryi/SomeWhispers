@@ -1,12 +1,64 @@
 {
-  "pages":[
+  "pages": [
     "pages/index/index",
-    "pages/logs/logs"
+    "pages/msg/msg",
+    "pages/create/create",
+    "pages/search/search",
+    "pages/mine/mine"
   ],
-  "window":{
-    "backgroundTextStyle":"light",
-    "navigationBarBackgroundColor": "#fff",
-    "navigationBarTitleText": "WeChat",
-    "navigationBarTextStyle":"black"
-  }
+  "window": {
+    "navigationBarBackgroundColor": "#ffffff",
+    "navigationBarTexetStyle": "black",
+    "navigationBarTitleText": "whispers",
+    "backgroundColor": "#f2f2f2",
+    "backgroundTextStyle": "dark",
+    "enablePullDownRefresh": true,
+    "onReachBottomDistance": 60
+  },
+  "tabBar": {
+    "color": "#707070",
+    "selectedColor": "#d81e06",
+    "backgroundColor": "#ffffff",
+    "borderStyle": "white",
+    "position": "bottom",
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "index",
+        "iconPath": "pages/index/img/info_normal.png",
+        "selectedIconPath": "pages/index/img/info_select.png"
+      },
+      {
+        "pagePath": "pages/msg/msg",
+        "text": "msg",
+        "iconPath": "pages/index/img/msg_normal.png",
+        "selectedIconPath": "pages/index/img/msg_select.png"
+      },
+        {
+          "pagePath": "pages/create/create",
+          "text": "create",
+          "iconPath": "pages/index/img/create_normal.png",
+          "selectedIconPath": "pages/index/img/create_select.png"
+        },
+      {
+        "pagePath": "pages/search/search",
+        "text": "search",
+        "iconPath": "pages/index/img/search_normal.png",
+        "selectedIconPath": "pages/index/img/search_select.png"
+      },
+      {
+        "pagePath": "pages/mine/mine",
+        "text": "mine",
+        "iconPath": "pages/index/img/my_normal.png",
+        "selectedIconPath": "pages/index/img/my_select.png"
+      }
+    ]
+  },
+  "networkTimeout": {
+    "request": 10000,
+    "downloadFile": 10000,
+    "connectSocket": 10000,
+    "uploadFile": 10000
+  },
+  "debug": true
 }
